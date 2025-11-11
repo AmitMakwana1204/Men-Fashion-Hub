@@ -1,0 +1,104 @@
+/* Main container for desktop size */
+.container {
+    max-width: 1200px; /* Standard desktop width */
+    margin: 0 auto;    /* Center the content */
+    padding: 0 20px;   /* Some side padding */
+}
+
+/* Apply container to main sections */
+header, .hero, .products, footer {
+    width: 100%;
+}
+.hero {
+    position: relative;
+    height: 80vh;
+    background: url("C:\Users\Admin\Desktop\Men-Fashion-Hub\men-fashion-hub\src\components\images\3446e660-7af3-4ff6-86ce-755afcde8fcd.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+
+
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay for text visibility */
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.hero button {
+    background: #ff9f00;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background: #e68a00;
+}
+
+/* Tablet View */
+@media (max-width: 992px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .search-box {
+        width: 80%;
+        margin: 10px 0;
+    }
+    nav a {
+        display: inline-block;
+        margin: 10px;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh;
+        padding: 20px;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-card {
+        width: 90%;
+    }
+}
