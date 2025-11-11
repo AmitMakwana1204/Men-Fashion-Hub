@@ -1,27 +1,52 @@
-/* Main container for desktop size */
-.container {
-    max-width: 1200px; /* Standard desktop width */
-    margin: 0 auto;    /* Center the content */
-    padding: 0 20px;   /* Some side padding */
+/* ==============================
+   GLOBAL STYLES
+   ============================== */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Apply container to main sections */
-header, .hero, .products, footer {
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #fff;
+}
+
+/* ==============================
+   CONTAINER
+   ============================== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ==============================
+   MAIN SECTIONS
+   ============================== */
+header,
+.hero,
+.products,
+footer {
     width: 100%;
 }
+
+/* ==============================
+   HERO SECTION
+   ============================== */
 .hero {
     position: relative;
-    height: 80vh;
-    background: url("C:\Users\Admin\Desktop\Men-Fashion-Hub\men-fashion-hub\src\components\images\3446e660-7af3-4ff6-86ce-755afcde8fcd.jpg") center/cover no-repeat;
+    height: 100vh; /* Full screen for desktop */
+    background: url("C:\Users\Admin\Desktop\Men-Fashion-Hub\men-fashion-hub\src\assets\images\3446e660-7af3-4ff6-86ce-755afcde8fcd.jpg ") center/cover no-repeat; /* ✅ Use relative path */
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
 }
 
-
-
-
+/* Dark overlay for better contrast */
 .hero::before {
     content: "";
     position: absolute;
@@ -29,76 +54,165 @@ header, .hero, .products, footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Dark overlay for text visibility */
+    background: rgba(0, 0, 0, 0.4);
 }
 
+/* Hero content */
 .hero-content {
     position: relative;
     text-align: center;
     z-index: 1;
+    max-width: 800px;
+    padding: 20px;
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    margin: 10px 0;
+    font-size: 1.5rem;
+    margin: 15px 0;
 }
 
 .hero button {
     background: #ff9f00;
     color: #fff;
-    padding: 12px 24px;
+    padding: 14px 28px;
     border: none;
     font-size: 18px;
     cursor: pointer;
-    border-radius: 4px;
-    transition: 0.3s;
+    border-radius: 6px;
+    transition: background 0.3s ease;
 }
 
 .hero button:hover {
     background: #e68a00;
 }
 
+/* ==============================
+   PRODUCT SECTION
+   ============================== */
+.products {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 280px;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    margin: 15px 0 10px;
+}
+
+.product-card p {
+    color: #777;
+}
+
+/* ==============================
+   FOOTER
+   ============================== */
+footer {
+    background: #111;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* ==============================
+   RESPONSIVE DESIGN
+   ============================== */
+
 /* Tablet View */
 @media (max-width: 992px) {
-    .header {
-        flex-direction: column;
-        text-align: center;
+    .hero {
+        height: 80vh;
+        background-position: center;
     }
-    .search-box {
-        width: 80%;
-        margin: 10px 0;
-    }
-    nav a {
-        display: inline-block;
-        margin: 10px;
-    }
+
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .product-grid {
+        gap: 15px;
     }
 }
 
 /* Mobile View */
 @media (max-width: 768px) {
     .hero {
-        height: 60vh;
-        padding: 20px;
+        height: 70vh;
+        padding: 30px;
     }
+
     .hero h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
+
     .hero p {
         font-size: 1rem;
     }
+
+    .hero button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
     .product-grid {
         flex-direction: column;
         align-items: center;
     }
+
     .product-card {
         width: 90%;
+    }
+}
+
+/* Extra Small Devices (Phones <480px) */
+@media (max-width: 480px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .hero button {
+        font-size: 14px;
     }
 }

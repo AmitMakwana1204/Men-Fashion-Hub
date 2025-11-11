@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="hero">
       <div className="hero-content">
         <h1>Upgrade Your Style</h1>
-        <p>Exclusive Men’s Fashion Deals</p>
+        <p> Men’s Fashion Deals</p>
         <button>Shop Now</button>
       </div>
     </section>
