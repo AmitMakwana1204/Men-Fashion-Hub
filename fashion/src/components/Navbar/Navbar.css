@@ -19,7 +19,7 @@
     align-items: center;
     list-style: none;
     gap: 50px;
-    color: #0e0d0d;
+    color: #251f1f;
     font-size: 20px;
     font-weight: 500;
 }
@@ -40,4 +40,49 @@
   width: 60px;    /* example: cart icon smaller */
   height: auto;
   object-fit: contain; /* prevents distortion */
+}
+
+.nav-menu hr{
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background: #FF4141;
+}
+
+.nav-login-cart{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-login-cart button{
+    width: 160px;
+    height: 60px;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 75px;
+    color: #515151;
+    font-size: 20px;
+    font-weight: 500;
+    background: white;
+    cursor: pointer;
+}
+
+.nav-login-cart button:active{
+    background: #f3f3f3;
+}
+
+.nav-cart-count{
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -35px;
+    margin-left: -55px;
+    border-radius: 11px;
+    font-size: 14px;
+    background: rgb(211, 10, 10);
+    color: white;
 }
