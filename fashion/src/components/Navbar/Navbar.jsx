@@ -18,13 +18,15 @@ const Navbar = ()  => {
 
         </ul>
         <div className='nav-login-cart'>
+            <Link to="/login">
             <button>Login</button>
+            </Link>
             <img src={cart} alt="" />
         </div>
     </div>
-  )
-}
+  );
+};
 
 
 
-export default Navbar
+export default Navbar;
