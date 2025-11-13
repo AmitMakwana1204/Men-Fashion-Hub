@@ -16,12 +16,23 @@ const Login = () => {
     <div className="login-page">
       <div className="login-container">
 
-      <form>
-      <input type="text" placeholder="Email" />
-      <input type="password" placeholder="Password" />
-      <button type="submit">LOGIN</button>
-      </form>
-
+        <form onSubmit={handleSubmit}>
+          {/* form */}
+          <input type="text"
+            placeholder="username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            required
+          />
+          <input
+            type="password"
+            placeholder="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+          <button type="submit">LOGIN</button>
+        </form>
         <p className="signup-text">
           Not registered? <Link to="/signup">Create an account</Link>
         </p>
