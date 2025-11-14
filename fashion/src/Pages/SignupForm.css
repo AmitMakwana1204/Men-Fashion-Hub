@@ -1,0 +1,68 @@
+/* SignupForm.css */
+
+/* Style for the form container */
+form {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for form fields */
+div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4e90f1;
+  box-shadow: 0 0 5px rgba(72, 126, 255, 0.5);
+}
+
+/* Style for the submit button */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4e90f1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3578d4;
+}
+
+/* Optional: Add a responsive design */
+@media (max-width: 600px) {
+  form {
+    padding: 15px;
+  }
+
+  input,
+  button {
+    font-size: 0.9rem;
+  }
+}

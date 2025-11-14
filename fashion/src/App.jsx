@@ -5,7 +5,7 @@ import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 import Shirt from './Pages/Shirt';
 import Pent from './Pages/Pent';
 import Login from './Pages/login';
-import Signup from './Pages/Signup';
+import SignupForm from './Pages/SignupForm';
 
 function App() {
 
@@ -18,7 +18,7 @@ function App() {
         <Route path='/Shirt' element={<Shirt />}></Route>
         <Route path='/Pent' element={<Pent />}></Route>
         <Route path='/login' element={<Login/>}></Route>
-        <Route path='/Signup' element={<Signup/>}></Route>
+        <Route path='/SignupForm' element={<SignupForm/>}></Route>
         </Routes>
       </Router>
   );
