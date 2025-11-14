@@ -17,7 +17,7 @@ body {
   justify-content: space-between; /* Spread items across */
   align-items: center;
   padding: 0 80px; /* Space on left & right */
-  background-color: #ffffff;
+  background-color: #a8f0d2;
   border-bottom: 1px solid #000000;
   position: fixed; /* Stays at top */
   top: 0;
@@ -33,7 +33,7 @@ body {
 }
 
 .nav-logo img {
-  width: 30px;
+  width: 50px;
   height: auto;
   border-radius: 50%;
 }
@@ -47,12 +47,12 @@ body {
 /* Menu */
 .nav-menu {
   display: flex;
-  gap: 40px;
+  gap: 60px;
   list-style: none;
 }
 
 .nav-menu li {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   cursor: pointer;
   color: #070707;
   transition: color white;
@@ -85,8 +85,8 @@ body {
 }
 
 .nav-login-cart img {
-  width: 50px;
-  height: auto;
+  width: 45px;
+  height: 40px;
   cursor: pointer;
 }
 
