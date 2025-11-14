@@ -3,8 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './Home.css';
 
-import img1 from '../../src/Components/Assets/images/b1.jpg';
-import img2 from '../../src/Components/Assets/images/Banner1.jpg';
+import img1 from '../../src/Components/Assets/images/Banner1.jpg';
+import img2 from '../../src/Components/Assets/images/Banner2.jpg';
 import img3 from '../../src/Components/Assets/images/Banner3.jpg';
 
 const Home = () => {
