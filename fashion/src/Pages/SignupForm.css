@@ -1,68 +1,70 @@
-/* SignupForm.css */
-
-/* Style for the form container */
-form {
+/* Centers the signup form on the page */
+.signup-page {
+  display: grid;
+  place-items: center; /* Centers horizontally and vertically */
   width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
+  height: 100vh; /* Full screen height */
+  background-color: #fff;
+}
+
+/* Signup form container */
+.signup-form {
+  width: 350px;
+  text-align: center;
   padding: 20px;
-  background-color: #f4f4f9;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Style for form fields */
-div {
-  margin-bottom: 15px;
+/* Heading */
+.signup-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
 }
 
-label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 5px;
-  font-size: 1rem;
-}
-
-input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1rem;
-  box-sizing: border-box;
-}
-
-input:focus {
-  outline: none;
-  border-color: #4e90f1;
-  box-shadow: 0 0 5px rgba(72, 126, 255, 0.5);
-}
-
-/* Style for the submit button */
-button {
+/* Input fields */
+.signup-form input {
   width: 100%;
   padding: 12px;
-  background-color: #4e90f1;
-  color: white;
+  margin-bottom: 15px;
   border: none;
+  background: #f2f2f2;
+  font-size: 14px;
+  outline: none;
   border-radius: 4px;
-  font-size: 1rem;
+}
+
+/* Submit button */
+.signup-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  border-radius: 4px;
 }
 
-button:hover {
-  background-color: #3578d4;
+.signup-form button:hover {
+  background-color: #45a049;
 }
 
-/* Optional: Add a responsive design */
-@media (max-width: 600px) {
-  form {
-    padding: 15px;
-  }
+/* Login text below button */
+.login-text {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #666;
+}
 
-  input,
-  button {
-    font-size: 0.9rem;
-  }
+.login-text a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.login-text a:hover {
+  text-decoration: underline;
 }

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import './SignupForm.css'; // Adjust the path as needed
-
+import './SignupForm.css';
 
 const SignupForm = () => {
   const [form, setForm] = useState({
@@ -12,67 +11,60 @@ const SignupForm = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setForm({
-      ...form,
-      [name]: value,
-    });
+    setForm({ ...form, [name]: value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(form);
-    // Add form validation and submission logic here
+    // Add form validation and API submission logic here
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label>First Name</label>
+    <div className="signup-page">
+      <form className="signup-form" onSubmit={handleSubmit}>
+        <h2>Create Account</h2>
+
         <input
           type="text"
           name="firstName"
+          placeholder="First Name"
           value={form.firstName}
           onChange={handleChange}
           required
         />
-      </div>
 
-      <div>
-        <label>Last Name</label>
         <input
           type="text"
           name="lastName"
+          placeholder="Last Name"
           value={form.lastName}
           onChange={handleChange}
           required
         />
-      </div>
 
-      <div>
-        <label>Email</label>
         <input
           type="email"
           name="email"
+          placeholder="Email"
           value={form.email}
           onChange={handleChange}
           required
         />
-      </div>
 
-      <div>
-        <label>Password</label>
         <input
           type="password"
           name="password"
+          placeholder="Password"
           value={form.password}
           onChange={handleChange}
           required
         />
-      </div>
 
-      <button type="submit">Sign Up</button>
-    </form>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
   );
 };
 
-export default SignupForm; // ✅ FIXED
+export default SignupForm;
