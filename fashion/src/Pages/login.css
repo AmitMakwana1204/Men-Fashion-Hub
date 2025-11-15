@@ -3,7 +3,7 @@
   place-items: center; /* This centers both horizontally and vertically */
   width: 100vw;
   height: 100vh; /* Full screen height */
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .login-container {
