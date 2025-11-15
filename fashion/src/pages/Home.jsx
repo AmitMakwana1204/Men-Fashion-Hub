@@ -3,24 +3,20 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './Home.css';
 
-import img1 from '../../src/Components/Assets/images/Banner1.jpg';
-import img2 from '../../src/Components/Assets/images/Banner2.jpg';
-import img3 from '../../src/Components/Assets/images/Banner3.jpg';
-
 const Home = () => {
   return (
     <div id="bannerCarousel" className="carousel slide" data-bs-ride="carousel">
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <img src={img1} className="d-block w-100" alt="Slide 1" />
+          <img src="https://i.pinimg.com/1200x/1e/1c/3e/1e1c3ebdccc66d783108d9f77b920a93.jpg" className="d-block w-100" alt="Slide 1" />
        
         </div>
         <div className="carousel-item">
-          <img src={img2} className="d-block w-100" alt="Slide 2" />
+          <img src="https://i.pinimg.com/1200x/8d/d9/3d/8dd93dd94e6e49e3754664d214f36b66.jpg" className="d-block w-100" alt="Slide 2" />
          
         </div>
         <div className="carousel-item">
-          <img src={img3} className="d-block w-100" alt="Slide 3" />
+          <img src="https://i.pinimg.com/1200x/95/f9/16/95f916f0e120311e8c76893a412e3077.jpg" className="d-block w-100" alt="Slide 3" />
           
         </div>
       </div>
