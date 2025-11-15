@@ -21,7 +21,7 @@ const Navbar = ()  => {
             <Link to="/login">
             <button>Login</button>
             </Link>
-            <img src={cart} alt="" />
+            <Link to="/cart"><img src={cart} alt="" /></Link>
         </div>
     </div>
   );

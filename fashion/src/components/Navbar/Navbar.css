@@ -17,7 +17,7 @@ body {
   justify-content: space-between; /* Spread items across */
   align-items: center;
   padding: 0 80px; /* Space on left & right */
-  background-color: #a8f0d2;
+  background-color: #ffffff;
   border-bottom: 1px solid #000000;
   position: fixed; /* Stays at top */
   top: 0;

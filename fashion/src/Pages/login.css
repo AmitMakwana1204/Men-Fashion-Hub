@@ -1,8 +1,7 @@
 .login-page {
   display: grid;
-  text-align: center;
   place-items: center; /* This centers both horizontally and vertically */
-  width: 100%;
+  width: 100vw;
   height: 100vh; /* Full screen height */
   background-color: #fff;
 }

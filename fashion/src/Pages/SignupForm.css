@@ -2,7 +2,7 @@
 .signup-page {
   display: grid;
   place-items: center; /* Centers horizontally and vertically */
-  width: 100%;
+  width: 100vw;
   height: 100vh; /* Full screen height */
   background-color: #fff;
 }

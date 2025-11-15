@@ -2,7 +2,7 @@
 #bannerCarousel {
   position: relative;
   width: 100%;
-  height: 90vh; /* Full viewport height */
+  height: 80vh; /* Full viewport height */
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -11,7 +11,7 @@
 
 /* Images inside carousel */
 .carousel-item img {
-  width: 100%;
+  width: auto;
   height: 90vh; /* Full screen height */
   object-fit: cover; /* Prevent distortion */
 }
@@ -44,5 +44,5 @@
 /* Optional hover effect */
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
-  opacity: 0.8;
+  opacity: 0.5s;
 }
