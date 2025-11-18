@@ -1,39 +1,46 @@
-
-/* Carousel container - Full screen */
+/* Carousel container */
 #bannerCarousel {
   position: relative;
   width: 100%;
-  height: 80vh; /* Full viewport height */
+  height: 80vh;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  /* Navbar fixed છે તેથી margin-top ઉમેરવું જરુરી */
+  margin-top: 0;
 }
 
-
-/* Images inside carousel */
+/* Carousel images */
 .carousel-item img {
-  width: auto;
-  height: 90vh; /* Full screen height */
-  object-fit: cover; /* Prevent distortion */
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
 }
 
 /* Navigation buttons */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: rgba(2, 2, 2, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
+}
+
+/* Prev/Next icon hover */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 0.7;
 }
 
 /* Indicators */
 .carousel-indicators {
-  bottom: 10px; /* Move indicators up */
+  bottom: 15px !important;
 }
 
 .carousel-indicators button {
-  background-color: #000000;
+  background-color: #ddd;
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -43,9 +50,21 @@
   background-color: #000;
 }
 
-/* Optional hover effect */
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-  opacity: 0.5s;
-}
+/* -------- Responsive (Mobile) -------- */
+@media (max-width: 768px) {
 
+  #bannerCarousel {
+    height: 60vh;
+  }
+
+  .carousel-item img {
+    height: 60vh;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+}

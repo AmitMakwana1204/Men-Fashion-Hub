@@ -96,3 +96,21 @@ body {
   cursor: pointer;
 }
 
+@media(max-width: 768px) {
+  .nav-menu {
+    gap: 15px;
+  }
+
+  .nav-menu li a {
+    font-size: 18px;
+  }
+
+  .nav-logo p {
+    font-size: 1.2rem;
+  }
+
+  .nav-login-cart img {
+    width: 35px;
+    height: 32px;
+  }
+}

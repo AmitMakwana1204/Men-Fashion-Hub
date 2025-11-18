@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #f5c7c7;
+  background-color: #ffffff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -56,6 +56,6 @@ button:focus-visible {
 }
 @media (prefers-color-scheme: light) {
   :root {
-    background-color: #f5c7c7;
+    background-color: #fffdfd;
   }
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import { useCart } from "./Cartcontext";
-import "./Cart.css"; // ✅ CSS file import
+import "./Cart.css";
 
 const Cart = () => {
   const { cart, removeFromCart, updateQty } = useCart();
@@ -19,21 +19,31 @@ const Cart = () => {
       ) : (
         cart.map((item) => (
           <div key={item.id} className="cart-item">
-            <div>
+
+            {/* Product Image */}
+            <img src={item.image} alt={item.name} className="cart-img" />
+
+            {/* Product Name + Price */}
+            <div className="cart-info">
               <h3>{item.name}</h3>
               <p>₹{item.price}</p>
             </div>
 
-            <div>
+            {/* Qty + Remove Btn */}
+            <div className="cart-actions">
               <input
                 type="number"
                 value={item.qty}
                 min="1"
-                onChange={(e) => updateQty(item.id, Number(e.target.value))}
+                onChange={(e) =>
+                  updateQty(item.id, Number(e.target.value))
+                }
               />
-            </div>
 
-            <button onClick={() => removeFromCart(item.id)}>Remove</button>
+              <button onClick={() => removeFromCart(item.id)}>
+                Remove
+              </button>
+            </div>
           </div>
         ))
       )}

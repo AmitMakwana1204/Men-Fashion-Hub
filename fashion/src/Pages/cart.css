@@ -1,113 +1,137 @@
-/* Cart.css */
-
-
+/* Main Cart Wrapper */
 .cart-container {
-  max-width: 900px;
-  width: 100vw;
-  margin: 20px auto;
+  max-width: auto;
+  margin: 100px auto 40px auto; /* Navbar offset */
   padding: 20px;
-  place-items: center;
-  background-color: #eaf1fa;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #eef3fa;
+  border-radius: 10px;
 }
 
+/* Heading */
 .cart-container h1 {
   text-align: center;
+  margin-bottom: 25px;
   font-size: 28px;
-  margin-bottom: 20px;
+  font-weight: bold;
   color: #333;
 }
 
+/* Empty Cart Message */
 .cart-empty {
   text-align: center;
-  font-size: 18px;
-  color: #353333;
   margin-top: 40px;
+  font-size: 20px;
+  color: #666;
 }
 
+/* Cart Item Box */
 .cart-item {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #ddd;
-  padding: 15px 0;
-  gap: 10px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 18px;
+  border: 1px solid #ddd;
+
+  min-height: 120px; /* SAME height for all items */
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08);
 }
 
-.cart-item div:last-child {
-  display: flex;
-  align-items: center;
-  gap: 10px; /* ✅ Space between input and Remove button */
+/* Product Image */
+.cart-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid #ccc;
 }
 
-.cart-item h3 {
+/* Name + Price */
+.cart-info {
+  flex: 1;
+  margin-left: 15px;
+}
+
+.cart-info h3 {
   font-size: 16px;
   margin: 0;
-  color: #333;
+  font-weight: 600;
+
+  /* Prevent name from expanding height */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.cart-item p {
-  font-size: 18px;
-  color: #000000;
+.cart-info p {
+  font-size: 17px;
+  color: #000;
+  margin-top: 5px;
   font-weight: bold;
 }
 
-.cart-item input {
-  width: 60px;
-  padding: 5px;
-  font-size: 14px;
-  text-align: center;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+/* Qty + Remove button */
+.cart-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.cart-item button {
-  background-color: #ff4d4d;
+/* Quantity Input */
+.cart-actions input {
+  width: 60px;
+  height: 35px;
+  padding: 5px;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+}
+
+/* Remove Button */
+.cart-actions button {
+  padding: 8px 12px;
+  background-color: #ff4d4f;
   color: #fff;
   border: none;
-  padding: 8px 12px;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
   font-size: 14px;
   transition: background-color 0.3s ease;
 }
 
-.cart-item button:hover {
-  background-color: #cc0000;
+.cart-actions button:hover {
+  background-color: #d9363e;
 }
 
+/* Total Amount */
 .cart-total {
   text-align: right;
-  font-size: 20px;
-  font-weight: bold;
   margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
   color: #333;
 }
 
-
-/* ✅ Responsive for mobile */
+/* ---------- Responsive Mobile View ---------- */
 @media (max-width: 768px) {
-  .cart-container {
-    width: 95%;
-    padding: 15px;
-  }
-
   .cart-item {
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
   }
 
-  .cart-item input {
+  .cart-img {
     width: 100%;
+    height: 170px;
+  }
+
+  .cart-actions {
+    width: 100%;
+    justify-content: space-between;
   }
 
   .cart-total {
     text-align: center;
-  }
-
-  .cart-container h1 {
-    font-size: 1.5rem;
   }
 }

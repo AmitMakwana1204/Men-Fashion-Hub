@@ -1,6 +1,6 @@
 import Home from './Pages/Home';
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
+import Navbar from './Components/Navbar/Navbar'
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 import Shirt from './Pages/Shirt';
 import Pent from './Pages/Pent';

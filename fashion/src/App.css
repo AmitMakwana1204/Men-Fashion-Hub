@@ -1,28 +1,92 @@
-.app-container {
+/* ---------------------
+   Global Reset
+---------------------- */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-.home-banner {
+html, body {
   width: 100%;
-  display: block;
-  margin-top: 0; /* ✅ Remove extra gap */
+  min-height: 100%;
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f5f7fa;
 }
 
-  
+/* ---------------------
+   Navbar fixed overlap fix
+---------------------- */
 body {
-
-  margin: 0;
-  display: flex;
-  place-items: center;
-  padding-top: 70px;
-  min-width: 320px;
-  min-height: 100vh;
-  background-color: #c7eaf5; /* ✅ Add this */
+  padding-top: 80px; /* Matches navbar height */
 }
 
+/* ---------------------
+   Smooth transitions
+---------------------- */
+a, button, input {
+  transition: 0.3s ease;
+}
 
-.page-container {
-  margin-top: 0;
-  padding: 20px;
+/* ---------------------
+   Scrollbar style
+---------------------- */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #dfe6ed;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9bbad1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7d9fbe;
+}
+
+/* ---------------------
+   Page container (optional)
+---------------------- */
+.page-layout {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* ---------------------
+   Global heading style
+---------------------- */
+h1, h2, h3 {
+  color: #222;
+}
+
+/* ---------------------
+   Utility classes
+---------------------- */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* ---------------------
+   Mobile fix
+---------------------- */
+@media (max-width: 768px) {
+  body {
+    padding-top: 70px;
+  }
+
+  .page-layout {
+    padding: 5px;
+  }
 }
