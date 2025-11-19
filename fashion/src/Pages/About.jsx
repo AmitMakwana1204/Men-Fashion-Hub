@@ -1,4 +1,5 @@
 import "./about.css";
+import me from "../Components/Assets/images/me1.webp";
 
 const About = () => {
   return (
@@ -25,7 +26,7 @@ const About = () => {
           </p>
         </div>
         <div className="story-image">
-          <img src="https://i.ibb.co/WHgY1yH/fashion-men.jpg" alt="Men Fashion" />
+          <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/c77527de-ae27-4726-9750-83c938bd3a35/d8v2kla-a0b10967-a9d5-43eb-bf8a-3d7d01e159f5.png/v1/fill/w_1192,h_670/fashion_hub_3d_logo___psd_by_shahbazrazvi_d8v2kla-pre.png" alt="Men Fashion" />
         </div>
       </section>
 
@@ -88,7 +89,7 @@ const About = () => {
 
         <div className="team-grid">
           <div className="team-card">
-            <img src="https://i.ibb.co/8rTgxgm/team1.jpg" alt="" />
+            <img src={me} alt="" />
             <h3>Amit Makwana</h3>
             <p>Creative Designer</p>
           </div>

@@ -107,16 +107,18 @@ const Pent = () => {
 
   return (
 
-<div className="container">
-  {products.map((product) => (
-    <div key={product.id} className="product-card">
-      <img src={product.image} alt={product.name} />
-      <h6>{product.name}</h6>
-      <p>Price: ₹{product.price}</p>
-      <button onClick={() => addToCart(product)}>Add to Cart</button>
+ <div className="pant-container">
+      {products.map((product) => (
+        <div key={product.id} className="pant-card">
+          <img src={product.image} alt={product.name} />
+          <h6>{product.name}</h6>
+          <p>₹{product.price}</p>
+          <button onClick={() => addToCart(product)}>
+            Add to Cart
+          </button>
+        </div>
+      ))}
     </div>
-  ))}
-</div>
   );
 };
 

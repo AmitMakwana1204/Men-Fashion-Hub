@@ -13,6 +13,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Payment from './Pages/Payment';
 import About from './Pages/About';
+import Footer from './Components/Footer';
 
 // Scroll to top on route change
 function ScrollToTop() {
@@ -35,6 +36,7 @@ function App() {
     <CartProvider>
       <Router>
         <Navbar />
+       
 
         {/* 🔥 Toaster Notifier */}
         <Toaster position="top-right" reverseOrder={false} />
@@ -49,6 +51,7 @@ function App() {
           <Route path="/payment" element={<Payment />} />
           <Route path="/about" element={<About />} />
         </Routes>
+         <Footer />
       </Router>
     </CartProvider>
   );

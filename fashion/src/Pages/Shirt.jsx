@@ -107,12 +107,12 @@ const Shirt = () => {
   return (
           
 
-<div className="container">
+<div className="shirt-container">
   {products.map((product) => (
-    <div key={product.id} className="product-card">
+    <div key={product.id} className="shirt-card">
       <img src={product.image} alt={product.name} />
       <h6>{product.name}</h6>
-      <p>Price: ₹{product.price}</p>
+      <p>₹{product.price}</p>
       <button onClick={() => addToCart(product)}>Add to Cart</button>
     </div>
   ))}
