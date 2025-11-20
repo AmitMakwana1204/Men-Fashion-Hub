@@ -15,7 +15,6 @@ import Payment from './Pages/Payment';
 import About from './Pages/About';
 import Footer from './Components/Footer';
 
-// Scroll to top on route change
 function ScrollToTop() {
   const { pathname } = useLocation();
   useEffect(() => {
