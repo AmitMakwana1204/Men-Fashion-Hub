@@ -26,8 +26,8 @@ body {
 
   /* Premium gradient + glass */
   background: linear-gradient(
-      rgba(255, 255, 255, 0.4),
-      rgba(255, 255, 255, 0.1)
+      rgb(183, 224, 253),
+      rgba(117, 201, 249, 0.981)
     ),
     #e3efff;
 
